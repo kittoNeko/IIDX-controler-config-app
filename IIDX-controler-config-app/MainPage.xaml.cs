@@ -5,6 +5,7 @@ namespace IIDX_controler_config_app
     public partial class MainPage : ContentPage
     {
         int count = 0;
+        List<string> SelectedOptions = new List<string> { "", "", "", "", "", "", "", "", "", "", "", ""};
         public ObservableCollection<Key> KeyOptions { get; } = new ObservableCollection<Key> {
             new Key("A", "a"),
             new Key("B", "b"),
@@ -44,6 +45,14 @@ namespace IIDX_controler_config_app
         {
             InitializeComponent();
             BindingContext = this;
+        }
+
+        private void Picker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (sender is Picker picker)
+            {
+                SelectedOptions[int.Parse(picker.ClassId)] = KeyOptions[picker.SelectedIndex].Value;
+            }
         }
     }
     public class Key

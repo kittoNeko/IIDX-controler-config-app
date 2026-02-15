@@ -15,11 +15,11 @@
               ColumnSpacing="15">
                 <VerticalStackLayout Grid.Column="0">
                     <Label Text="Function Button 1"/>
-                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}"/>
+                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}" SelectedIndexChanged="Picker_SelectedIndexChanged" ClassId="8"/>
                 </VerticalStackLayout>
                 <VerticalStackLayout Grid.Column="1">
                     <Label Text="Function Button 2"/>
-                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}"/>
+                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}" SelectedIndexChanged="Picker_SelectedIndexChanged" ClassId="9"/>
                 </VerticalStackLayout>
             </Grid>
             <Label Text="Game buttons"
@@ -29,34 +29,34 @@
               ColumnSpacing="15">
                 <VerticalStackLayout Grid.Column="0">
                     <Label Text="Button 2"/>
-                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}"/>
+                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}" SelectedIndexChanged="Picker_SelectedIndexChanged" ClassId="2"/>
                 </VerticalStackLayout>
                 <VerticalStackLayout  Grid.Column="1">
                     <Label Text="Button 4"/>
-                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}"/>
+                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}" SelectedIndexChanged="Picker_SelectedIndexChanged" ClassId="4"/>
                 </VerticalStackLayout>
                 <VerticalStackLayout Grid.Column="2">
                     <Label Text="Button 6"/>
-                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}"/>
+                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}" SelectedIndexChanged="Picker_SelectedIndexChanged" ClassId="6"/>
                 </VerticalStackLayout>
             </Grid>
             <Grid ColumnDefinitions="*,*,*,*"
               ColumnSpacing="15">
                 <VerticalStackLayout Grid.Column="0">
                     <Label Text="Button 1"/>
-                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}"/>
+                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}" SelectedIndexChanged="Picker_SelectedIndexChanged" ClassId="1"/>
                 </VerticalStackLayout>
                 <VerticalStackLayout Grid.Column="1">
                     <Label Text="Button 3"/>
-                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}"/>
+                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}" SelectedIndexChanged="Picker_SelectedIndexChanged" ClassId="3"/>
                 </VerticalStackLayout>
                 <VerticalStackLayout Grid.Column="2">
                     <Label Text="Button 5"/>
-                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}"/>
+                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}" SelectedIndexChanged="Picker_SelectedIndexChanged" ClassId="5"/>
                 </VerticalStackLayout>
                 <VerticalStackLayout Grid.Column="3">
                     <Label Text="Button 7"/>
-                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}"/>
+                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}" SelectedIndexChanged="Picker_SelectedIndexChanged" ClassId="7"/>
                 </VerticalStackLayout>
             </Grid>
             <Label Text="Rotation encoder config"
@@ -66,11 +66,11 @@
               ColumnSpacing="15">
                 <VerticalStackLayout Grid.Column="0">
                     <Label Text="Clockwise"/>
-                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}"/>
+                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}" SelectedIndexChanged="Picker_SelectedIndexChanged" ClassId="10"/>
                 </VerticalStackLayout>
                 <VerticalStackLayout Grid.Column="1">
                     <Label Text="Counterclockwise"/>
-                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}"/>
+                    <Picker ItemsSource="{Binding KeyOptions}" ItemDisplayBinding="{Binding Label}" SelectedIndexChanged="Picker_SelectedIndexChanged" ClassId="11"/>
                 </VerticalStackLayout>
             </Grid>
             <Button Text="Save config to file"
