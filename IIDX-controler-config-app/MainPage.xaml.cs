@@ -5,7 +5,7 @@ namespace IIDX_controler_config_app
     public partial class MainPage : ContentPage
     {
         int count = 0;
-        public static ObservableCollection<Key> KeyOptions = new ObservableCollection<Key> {
+        public ObservableCollection<Key> KeyOptions { get; } = new ObservableCollection<Key> {
             new Key("A", "a"),
             new Key("B", "b"),
             new Key("C", "c"),
@@ -43,12 +43,13 @@ namespace IIDX_controler_config_app
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = this;
         }
     }
     public class Key
     {
-        public string Label;
-        public string Value;
+        public string Label { get; }
+        public string Value { get; }
         public Key(string label, string value)
         {
             Label = label;
